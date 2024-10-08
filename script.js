@@ -72,10 +72,12 @@ function checkBoard() {
         }
 
     } else if (gameboard.includes(undefined) === false) {
+        alert(`It's a draw`)
         for (let i = 0; i < 9; i++) {
             gameboard[i] = undefined;
         }
         lastPlaced = `o`;
+        drawGameboard();
     }
 }
 
